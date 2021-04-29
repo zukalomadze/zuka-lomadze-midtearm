@@ -5,7 +5,6 @@ export class API_SERVICE {
         process.env.REACT_APP_API_URL + `/products?_quantity=${quantity}`
       );
       const result = await response.json();
-      console.log(result)
       return result;
     } catch (error) {
       console.trace(error);

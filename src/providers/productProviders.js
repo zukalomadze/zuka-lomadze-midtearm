@@ -8,7 +8,8 @@ function ProductProviderComponents({children}){
     useEffect(() => {
         (async () => {
             const response = await API_SERVICE.getProductData({});
-            setProductData(response);
+            console.log(response)
+            setProductData(response.data);
         })();
     }, []);
     return (
